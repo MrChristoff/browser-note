@@ -30,7 +30,20 @@ function noteListPrintsNotes() {
   }
 };
 
+function returnsArrayOfNoteText() {
+  var noteList = new NoteList();
+  noteList.storeNote("Harry Potter");
+  noteList.storeNote("Golden Compass");
+  var arr = noteList.returnArrayOfNotes()
+  if (arr.includes("Harry Potter") && arr.includes("Golden Compass")) {
+    console.log("returnsArrayOfNoteText")
+  } else {
+    throw "False!"
+  }
+};
+
 
 storesTextOnCreation();
 noteListStoresNote();
 noteListPrintsNotes();
+returnsArrayOfNoteText();
