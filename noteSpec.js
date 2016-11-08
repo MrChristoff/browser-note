@@ -42,8 +42,22 @@ function returnsArrayOfNoteText() {
   }
 };
 
+function returnsHTML () {
+  var noteList = new NoteList();
+  noteList.storeNote("Harry Potter");
+  noteList.storeNote("Golden Compass");
+  var view = new NoteListView(noteList);
+  var listFormat = "<ul><li><div>Harry Potter</div></li><li><div>Golden Compass</div></li></ul>"
+
+  if (view.returnsHTML(noteList) === listFormat ) {
+    console.log("returnsHTML")
+  } else {
+    throw "False!"
+  }
+};
 
 storesTextOnCreation();
 noteListStoresNote();
 noteListPrintsNotes();
 returnsArrayOfNoteText();
+returnsHTML();
