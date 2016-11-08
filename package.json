@@ -1,0 +1,22 @@
+{
+  "name": "browser-note",
+  "version": "1.0.0",
+  "description": "\"SPA note app\"",
+  "main": "note-list-model.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrChristoff/browser-note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrChristoff/browser-note/issues"
+  },
+  "homepage": "https://github.com/MrChristoff/browser-note#readme",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
