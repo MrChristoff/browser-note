@@ -1,5 +1,5 @@
 (function(exports) {
-  function NoteListView (noteList){
+  function NoteListView (){
   }
 
   NoteListView.prototype.returnsHTML = function(noteList) {

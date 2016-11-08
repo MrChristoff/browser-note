@@ -46,7 +46,7 @@ function returnsHTML () {
   var noteList = new NoteList();
   noteList.storeNote("Harry Potter");
   noteList.storeNote("Golden Compass");
-  var view = new NoteListView(noteList);
+  var view = new NoteListView();
   var listFormat = "<ul><li><div>Harry Potter</div></li><li><div>Golden Compass</div></li></ul>"
 
   if (view.returnsHTML(noteList) === listFormat ) {
